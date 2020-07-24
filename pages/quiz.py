@@ -3,6 +3,7 @@ from pages.fetch import*
 
 def main():
     front_up()
+    st.image(image ='https://github.com/dyslexiaworkin/DyslexiaML/blob/raka/imp.gif?raw=true', width =700)
     st.title("QUIZ")
     
     if st.checkbox('Question I', key ='q1'):
