@@ -241,15 +241,13 @@ def main():
             st.write(ansq20)
             ssubmit(ans = ansq20, question ="20")
     
-
-   
-    
-    
-    
+     
     if st.button("Submit the quiz", key='submit'):
-        #check for each question is answered
-        sdatabase(page = 'suvey')
-        
+        try:
+            if bool(ansq1) and bool(ansq2) and bool(ansq3) and bool(ansq4) and bool(ansq5) and bool(ansq6) and bool(ansq7) and bool(ansq8) and bool(ansq9) and bool(ansq10) and bool(ansq11) and bool(ansq12) and bool(ansq13) and bool(ansq14) and bool(ansq15) and bool(ansq16) and bool(ansq17) and bool(ansq18) and bool(ansq19) and bool(ansq20):
+                sdatabase(page = 'quiz') #push ot database
+        except:
+            st.warning("Please answer all questions")    
         
         
     

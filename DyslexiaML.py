@@ -18,12 +18,15 @@ def icon(icon_name):
 import pages.home
 import pages.quiz
 import pages.survey
+import pages.login
 
 
 PAGES = {
+    "Login": pages.login,
     "Home": pages.home,
     "Quiz": pages.quiz,
     "Survey": pages.survey
+    
 }
 
 

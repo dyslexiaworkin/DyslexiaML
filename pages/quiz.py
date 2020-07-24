@@ -1,5 +1,6 @@
 import streamlit as st
 from pages.fetch import*
+from pages.login import result
 
 def main():
     front_up()
@@ -131,5 +132,8 @@ def main():
     
     
     if st.button("Submit the quiz", key='submit'):
-        if bool(ansq1) and bool(ansq2) and bool(ansq3) and bool(ansq4) and bool(ansq5) and if bool(ansq6) and bool(ansq7) and bool(ansq8) and bool(ansq9) and and bool(ansq10)  
-        database(page = 'quiz') #push ot database
+        try:
+            if bool(ansq1) and bool(ansq2) and bool(ansq3) and bool(ansq4) and bool(ansq5) and bool(ansq6) and bool(ansq7) and bool(ansq8) and bool(ansq9) and bool(ansq10):
+                database(page = 'quiz') #push ot database
+        except:
+            st.warning("Please answer all questions")
