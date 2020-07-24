@@ -1,34 +1,29 @@
-"""Main module for the streamlit NLPJenny app"""
+"""Main module for the streamlit Dyslexia app"""
+
 import streamlit as st
 
 
 import pages.home
-import pages.basicNLP
-#import pages.captionGenerator
-import pages.nertm
-import pages.machineTranlation
-import pages.textSummarization
+import pages.quiz
+import pages.survey
 
 
 PAGES = {
     "Home": pages.home,
-    "Basic NLP": pages.basicNLP,
-    "NER and Topic Modelling": pages.nertm,
-    "Text Summarization": pages.textSummarization,
-    "Machine Translation": pages.machineTranlation
-    #"Caption Generator": pages.captionGenerator
+    "Quiz": pages.quiz,
+    "Survey": pages.survey
 }
 
 
 def main():
 
-    st.sidebar.title("NLPJenny")
-    st.sidebar.text("Natural Language Processing On the Go")
+    st.sidebar.title("DyslexiaML")
+    st.sidebar.text("AI for Dyslexia")
 
     st.sidebar.title("Navigation")
     page = st.sidebar.radio("Go to", list(PAGES.keys()))
 
-    #PAGES[page].main()
+    
 
     with st.spinner(f"Loading {page} ..."):
         PAGES[page].main()
@@ -37,8 +32,7 @@ def main():
 
     st.sidebar.info(
         """
-        This App uses State of the Art free tier API's from different paltforms
-        like IBM,Google Cloud and libraries like Spacy,Genism, NLTK and Textblob etc. 
+        This App uses Machine Learning to Detect Dyslexia.  
         It uses Streamlit for implemention of beatiful and easy web app.
         """
     )
@@ -46,25 +40,25 @@ def main():
     st.sidebar.title("Contact Developer")
     st.sidebar.info(
         """
-        This app is develop by Aryan. You can contact me at
-        [aryan chaudhary](https://aryanc55.github.io).
+        This app is develop by Dyslexiaworkin Organization. You can contact us at
+        [Dyslexiaworkin](https://github.com/dyslexiaworkin).
 """
     )
 
    #st.sidebar.markdown("[![Github](https://github.com/aryanc55/NLPJenny/blob/master/assests/github.png?raw=true)](https://github/aryanc55)")
 
     st.sidebar.markdown(
-        """  [Github](https://github.com/aryanc55)""")  # change all thses three to  to iamge
+        """  [Github](https://github.com/dyslexiaworkin)""")  # change all thses three to  to iamge
     st.sidebar.markdown("""  [Twitter](https://twitter.com/aryanc55)""")
-    st.sidebar.markdown("""  [Medium](https://medium.com/@aryanc55)""")
+    """)
 
     st.sidebar.title("Souce Code")
     st.sidebar.info(
         "This an free to use template repository and you are very welcome to **contribute** your awesome "
         "comments, questions, resources and apps as "
-        "[issues](https://github.com/aryanc55/NLPJenny/issues) of or "
-        "[pull requests](https://github.com/aryanc55/NLPJenny/pulls) "
-        "to the [source code](https://github.com/aryanc55/NLPJenny). "
+        "[issues](https://github.com/dyslexiaworkin/DyslexiaML/issues) of or "
+        "[pull requests](https://github.com/dyslexiaworkin/DyslexiaML/pulls) "
+        "to the [source code](https://github.com/dyslexiaworkin/DyslexiaML). "
     )
 
 
