@@ -25,7 +25,7 @@ def main():
         ansq2 = st.radio("Answer:", ['Orange','Banana','Grapes','Mango'], key ='q2')
         
         if st.button("SUBMIT", key='q2'):
-            st.write(ansq1)
+            st.write(ansq2)
             submit(ans = ansq2, question ="2")
             
             
@@ -40,7 +40,7 @@ def main():
         ansq3 = st.radio("Answer:", ['Orange','Banana','Grapes','Mango'], key = 'q3')
         
         if st.button("SUBMIT", key='q3'):
-            st.write(ansq1)
+            st.write(ansq3)
             submit(ans = ansq3, question ="3")
             
             
@@ -93,7 +93,7 @@ def main():
         
         if st.button("SUBMIT", key='q7'):
             st.write(ansq7)
-            submit(ans = ansq6, question ="7")
+            submit(ans = ansq7, question ="7")
     
     
     if st.checkbox('Question VIII', key ='q8'):
@@ -131,5 +131,5 @@ def main():
     
     
     if st.button("Submit the quiz", key='submit'):
-        #if bool(ansq1) and bool(ansq2) and ...... apply check if every questions is answered
+        if bool(ansq1) and bool(ansq2) and bool(ansq3) and bool(ansq4) and bool(ansq5) and if bool(ansq6) and bool(ansq7) and bool(ansq8) and bool(ansq9) and and bool(ansq10)  
         database(page = 'quiz') #push ot database

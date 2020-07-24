@@ -249,3 +249,10 @@ def main():
     if st.button("Submit the quiz", key='submit'):
         #check for each question is answered
         sdatabase(page = 'suvey')
+        
+        
+        
+    
+    if st.button("Check your result", key='result'):
+        #check for each question is answered
+        result()

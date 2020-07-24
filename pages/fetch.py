@@ -36,7 +36,8 @@ def front_down():
     #closing remarks
     pass
 
-
+def result():
+    pass
 
 def contact():
     pass    
