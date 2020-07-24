@@ -4,6 +4,8 @@ from pages.fetch import*
 
 def main():
 	front_up()
+ 
+	st.image(image = "https://github.com/dyslexiaworkin/DyslexiaML/blob/master/dyslexia.jpg?raw=true",width =700)
 
 	st.markdown("""
 			
@@ -35,6 +37,7 @@ and autism spectrum disorders are not the same as learning disabilities.</br>
 
 """, unsafe_allow_html=True)
 
-	st.header('Kuch to heading hona chaie')
+	st.header('More about Dyslexia')
+	st.subheader("This is what reading with dyslexia may look like!")
+	st.image(image ='https://github.com/dyslexiaworkin/DyslexiaML/blob/master/dyslexia-zoomedout.gif?raw=true', width =700)
  	
-    
