@@ -7,25 +7,34 @@ def main():
 
 	st.markdown("""
 			
-			 This is a Natural Language Processing(NLP) Based App useful for basic NLP task
-			implemented using State of he Art API's on Streamlit Framework
-			""")
+			 <h4 align="center" id="a"><i>"Children are a nation’s most valuable assets!"</i></h4>
+
+			""", unsafe_allow_html=True)
 	### features
+ 
+	st.markdown(""" 
 
-	st.header('Features')
+  A learning disability is a problem that affects how a person receives and processes information. People with learning disabilities may have trouble with any of the following:
 
-	st.markdown("""
-			#### Basic NLP Tasks:
-			+ App covers the most basic NLP task of tokenisation, parts of speech tagging.
-				You can paste the desired content or may directly pass the url for the text.
-			#### Named Entity Recognition and Topic Modelling:
-			+ Named Entites like organistion person etc are recognised and top topics from the corpus
-				are found based on LDA modelling.
-			#### Machine Translations:
-			+ Machine Translation, or aka Language Translation. App uses Googel TRanslate API.Currently 
-				app has options for 10-15 languages.
-			
-			#### Text Summarisation:
-			+ It summerizes the given text into few lines. One can copy paste the article or may direclty
-				pass the URL.It has options to use Gensim, Sumy.
-			""")
+
++ Reading
++ Writing
++ Doing math
++ Understanding directions
++ Learning disabilities are common. 
+
+
+
+Learning disabilities have nothing to do with how smart a person is. Rather, a person with a learning disability may just see, hear, or understand things differently. 
+That can make everyday tasks, such as studying for a test or staying focused in class, much more difficult. There are strategies a person can learn to make it easier 
+to cope with these differences.
+
+Types of Learning Disabilities
+There are many different kinds of learning disabilities, and they can affect people differently. It's important to note that attention deficit hyperactivity disorder (ADHD)
+and autism spectrum disorders are not the same as learning disabilities.</br>
+
+""", unsafe_allow_html=True)
+
+	st.header('Kuch to heading hona chaie')
+ 	
+    

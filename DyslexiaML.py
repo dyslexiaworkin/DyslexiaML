@@ -18,14 +18,14 @@ PAGES = {
 def main():
 
     st.sidebar.title("DyslexiaML")
-    st.sidebar.text("AI for Dyslexia")
+    st.sidebar.text(" ""AI for Dyslexia"" ")
 
     st.sidebar.title("Navigation")
     page = st.sidebar.radio("Go to", list(PAGES.keys()))
 
     
 
-    with st.spinner(f"Loading {page} ..."):
+    with st.spinner(text = f"Loading {page} ..."):
         PAGES[page].main()
 
     st.sidebar.title("About App")
@@ -50,7 +50,7 @@ def main():
     st.sidebar.markdown(
         """  [Github](https://github.com/dyslexiaworkin)""")  # change all thses three to  to iamge
     st.sidebar.markdown("""  [Twitter](https://twitter.com/aryanc55)""")
-    """)
+    
 
     st.sidebar.title("Souce Code")
     st.sidebar.info(
