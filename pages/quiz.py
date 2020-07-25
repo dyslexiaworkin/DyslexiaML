@@ -3,7 +3,8 @@ from pages.fetch import*
 import SessionState
 from pages.login import login_dict
 from pages.login import name_dict
- 
+import MySQLdb
+
 
 
 
@@ -89,6 +90,10 @@ def main():
     #st.write('User Logged in',name_dict.values())
     try:
         st.write('User Logged in as',name_dict['name'])
+        pk = login_dict["key"]
+        na = name_dict['name']
+        st.write("primary key" ,pk)
+        st.write("nane " ,na)
     except:
         st.error(" Please Log in")
     
@@ -231,9 +236,9 @@ def main():
     
     if st.button("Submit the quiz", key='submit'):
         st.write("hello")
-        try:
+        if 1:
             st.write(bool(ansdic['ansq1']))
-            
+            st.write(dis['marks1'])
             st.write(dis.keys())
             st.write(ansdic.keys())
             st.write("hello3")
@@ -241,10 +246,12 @@ def main():
                 st.write("hello4")
                 conn = MySQLdb.connect("localhost","ryan","mark50","dyslexia" )
                 c = conn.cursor()
-                query = 'INSERT INTO quiz(key,mone,mtwo,mthree,mfour,mfive,msix,mseven,meight,mnine,mten) VALUES ("%s","%s","%s","%s","%s","%s","%s","%s","%s","%s","%s");' % (key,dis['marks1'],dis['marks2'],dis['marks3'],dis['marks4'],dis['marks5'],dis['marks6'],dis['marks7'],dis['marks8'],dis['marks9'],dis['marks10'])
+                
+                query = 'INSERT INTO quiz(pk,name,mone,mtwo,mthree,mfour,mfive,msix,mseven,meight,mnine,mten) VALUES ("%s", "%s","%s","%s","%s","%s","%s","%s","%s","%s","%s","%s");' % (pk,na,dis['marks1'],dis['marks2'],dis['marks3'],dis['marks4'],dis['marks5'],dis['marks6'],dis['marks7'],dis['marks8'],dis['marks9'],dis['marks10'])
                 c.execute(query)
                 conn.commit()
                 #table stiil to be created by shell
-        except:
+        else:
             st.warning("Please answer each all questions")
             
+# CREATE TABLE quiz (pk int PRIMARY KEY,name varchar(100),mone int,mtwo int,mthree int,mfour int,mfive int ,msix int,mseven int,meight int,mnine int,mten int);

@@ -2,10 +2,21 @@ import streamlit as st
 from pages.fetch import*
 from pages.login import login_dict
 from pages.login import name_dict
+import MySQLdb
+
 
 
 def main():
     front_up()
+    try:
+        st.write('User Logged in as',name_dict['name'])
+        pk = login_dict["key"]
+        na = name_dict['name']
+        st.write("primary key" ,pk)
+        st.write("nane " ,na)
+    except:
+        st.error(" Please Log in")
+    
     st.title("SURVEY")
     try:
         st.write('User Logged in as',name_dict['name'])
