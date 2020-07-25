@@ -1,7 +1,7 @@
 import streamlit as st
 from pages.fetch import*
 import SessionState
-
+from pages.login import login_dict
 
 #from pages.login import PRIMARY_KEY 
 
@@ -100,7 +100,7 @@ def main():
     
     front_up()
     st.title("QUIZ")
-    
+    st.write(login_dict)
     if st.checkbox('Question I', key ='q1'):
         st.info("Check whether these two alphabets  are same or not?")
         st.image(image = 'https://github.com/dyslexiaworkin/artgallery/blob/master/O.png?raw=true',width=100)
