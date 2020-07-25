@@ -218,7 +218,7 @@ def main():
             st.write(ansq9)
             marks9 = submit(ans = ansq9, question ="9")
             dis.update({'marks9':marks9})
-            st.write(dis)
+            #st.write(dis)
     
     if st.checkbox('Question X', key ='q10'):
         st.info("What do you hear?")
@@ -230,20 +230,20 @@ def main():
             st.write(ansq10)
             marks10 = submit(ans = ansq10, question ="10")
             dis.update({'marks10':marks10})
-            st.write(dis)
+            st.write("Your Answers",dis)
             
     
     
     if st.button("Submit the quiz", key='submit'):
-        st.write("hello")
-        if 1:
+        #st.write("hello")
+        try:
             st.write(bool(ansdic['ansq1']))
             st.write(dis['marks1'])
             st.write(dis.keys())
             st.write(ansdic.keys())
             st.write("hello3")
             if bool(ansdic['ansq1']) and bool(ansdic['ansq2']) and bool(ansdic['ansq3']) and bool(ansdic['ansq4']) and bool(ansdic['ansq5']) and bool(ansdic['ansq6']) and bool(ansdic['ansq7']) and bool(ansdic['ansq8']) and bool(ansdic['ansq9']) and bool(ansdic['ansq10']) :
-                st.write("hello4")
+                #st.write("hello4")
                 conn = MySQLdb.connect("localhost","ryan","mark50","dyslexia" )
                 c = conn.cursor()
                 
@@ -251,7 +251,9 @@ def main():
                 c.execute(query)
                 conn.commit()
                 #table stiil to be created by shell
-        else:
+        except MySQLdb.IntegrityError:
+             st.warning("Already Submitted")
+        except:
             st.warning("Please answer each all questions")
             
 # CREATE TABLE quiz (pk int PRIMARY KEY,name varchar(100),mone int,mtwo int,mthree int,mfour int,mfive int ,msix int,mseven int,meight int,mnine int,mten int);
