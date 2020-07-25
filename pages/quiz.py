@@ -249,7 +249,7 @@ def main():
             if bool(ansdic['ansq1']) and bool(ansdic['ansq2']) and bool(ansdic['ansq3']) and bool(ansdic['ansq4']) and bool(ansdic['ansq5']) and bool(ansdic['ansq6']) and bool(ansdic['ansq7']) and bool(ansdic['ansq8']) and bool(ansdic['ansq9']) and bool(ansdic['ansq10']) :
                 st.write("hello4")
                 conn = MySQLdb.connect("localhost","ryan","mark50","dyslexia" )
-    		    c = conn.cursor()
+                c = conn.cursor()
                 query = 'INSERT INTO quiz(key,mone,mtwo,mthree,mfour,mfive,msix,mseven,meight,mnine,mten) VALUES ("%s","%s","%s","%s","%s","%s","%s","%s","%s","%s","%s");' % (key,dis['marks1'],dis['marks2'],dis['marks3'],dis['marks4'],dis['marks5'],dis['marks6'],dis['marks7'],dis['marks8'],dis['marks9'],dis['marks10'])
                 c.execute(query)
                 conn.commit()

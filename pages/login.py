@@ -55,7 +55,7 @@ def view_all_users(c):
 
 
 
-
+login_dict={}
 
 def main():
     #global PRIMARY_KEY 
@@ -87,7 +87,8 @@ def main():
 			if result:
 				#st.write(result[0][0])
 				PRIMARY_KEY = result[0][0]
-				session_state.p = PRIMARY_KEY
+				login_dict.update({'key':PRIMARY_KEY})
+				#session_state.p = PRIMARY_KEY
 				st.success("Logged In as {}".format(username))
 			else:
 				st.warning("Incorrect Username/Password")
