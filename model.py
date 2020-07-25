@@ -35,7 +35,9 @@ def domainmarks(dataframe=None):
     marksdf.Visual_discrimination = (temp1.mone_quiz+temp1.mthree_quiz+temp1.mfour_quiz+temp1.msix_quiz)/16
     marksdf.Memory = (temp1.mtwo_quiz+temp1.mnine_quiz)/8
     marksdf.Audio_Discrimination = (temp1.mseven_quiz+temp1.mten_quiz)/8
-    marksdf.Speed = np.random.uniform(0,1)
+    
+    marksdf.Speed = np.random.uniform(0,0.5)
+    
     surevy_col =['mone_survey', 'mtwo_survey', 'mthree_survey', 'mfour_survey',
        'mfive_survey', 'msix_survey', 'mseven_survey', 'meight_survey',
        'mnine_survey', 'mten_survey', 'meleven', 'mtwelve', 'mthirteen',
@@ -52,6 +54,7 @@ def prediction(user_prime_key=None):
     res = result(user_prime_key = user_prime_key)
     
     data = domainmarks(res)
+    
      
     print("loading model")
     pipeline = joblib.load(urlopen('https://github.com/dyslexiaworkin/DyslexiaML/blob/master/transform_predict.joblib?raw=true')) #url

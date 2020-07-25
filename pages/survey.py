@@ -361,10 +361,10 @@ def main():
         try:
             with st.spinner(text ="DyslexiaML is Analyzing"):
                 pred = prediction(user_prime_key = pk)
-                if int(pred) == 3:
+                if int(pred) == 2:
                     st.balloons()
                     st.success("Your Child Does Not Has Dyslexia!! ")
-                elif int(pred) == 2:
+                elif int(pred) == 1:
                     st.success("Your Child Has Mild Dyslexia Symptoms. Consult Doctor ")
                 else:
                     st.success("Your Child Has Dyslexia Symptoms. Consult Doctor ")
