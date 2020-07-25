@@ -1,14 +1,10 @@
 import streamlit as st
 from pages.fetch import*
+
 import pandas as pd
 import hashlib
 
 import MySQLdb
-
-from pages.fetch import*
-
-
-
 
 def make_hashes(password):
 	return hashlib.sha256(str.encode(password)).hexdigest()
@@ -60,9 +56,11 @@ def view_all_users(c):
 
 
 
+
 def main():
+    #global PRIMARY_KEY 
 	"""Simple Login App"""
-	front_up()
+	#front_up()
 	st.title("Login/SignUp")
 
 	menu = ["Login","SignUp"]
@@ -85,8 +83,11 @@ def main():
 			hashed_pswd = make_hashes(password)
 
 			result = login_user(username,check_hashes(password,hashed_pswd),c)
+			
 			if result:
-				st.write(result)
+				#st.write(result[0][0])
+				PRIMARY_KEY = result[0][0]
+				session_state.p = PRIMARY_KEY
 				st.success("Logged In as {}".format(username))
 			else:
 				st.warning("Incorrect Username/Password")

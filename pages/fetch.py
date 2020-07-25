@@ -1,5 +1,8 @@
 import streamlit as st
 
+#from pages.login import result
+#from pages.login import PRIMARY_KEY
+
 from bs4 import BeautifulSoup
 from urllib.request import urlopen
 # Fetch Text From Url
@@ -30,6 +33,7 @@ def front_up():
 		<br></br>
 	"""
     st.markdown(html_temp,unsafe_allow_html=True)
+    
 
 
 def front_down():
@@ -43,12 +47,77 @@ def contact():
     pass    
 	#st.markdown(html,unsafe_allow_html=True)
 
-def submit(ans =None, question =None):
-    pass
+# def submit(ans =None, question =None):
+#     marks= 0
+#     if question =="1":
+#         if ans =='Yes':
+#             marks = 4
+#         else:
+#             marks = 0
+            
+    
+#     elif question =="2":
+#         if ans == 'Grapes':
+#             marks = 4
+#         else:
+#             marks=0
+               
+#     if question =="3":
+#         if ans =='No':
+#             marks=4
+#         else:
+#             marks =0
+    
+#     elif question =="4":
+#         if ans == "The First Letter":
+#             marks =4
+#         else:
+#             marks =0
+    
+#     if question =="5":
+#         if ans =="C":
+#             marks=4
+#         else:
+#             marks=0
+    
+#     elif question =="6":
+#         if ans == "b":
+#             marks = 4
+#         else:
+#             marks=0
+    
+    
+#     if question =="7":
+#         if ans =="ED":
+#             marks=4
+#         else:
+#             marks=0
+    
+#     elif question =="8":
+#         if ans =="Dog":
+#             marks=4
+#         else:
+#             marks=0
+    
+    
+    
+#     if question =="9":
+#         if ans == "First one is left and next one is right":
+#             marks=4
+#         else:
+#             marks=0
+			
+    
+#     elif question =="10":
+#         if ans == "cake":
+#             marks=4
+#         else:
+#             marks=0
+    
+#     return marks
 
-def database(page =None):
-    pass
-
+def database(page =None,PRIMARY_KEY=None,marks={}):
+    st.write(marks)
 
 def sdatabase(page =None):
     pass
