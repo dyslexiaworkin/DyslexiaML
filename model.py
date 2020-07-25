@@ -48,7 +48,7 @@ def domainmarks(dataframe=None):
     return data
  
  
-def model(user_prime_key=None):
+def prediction(user_prime_key=None):
     res = result(user_prime_key = user_prime_key)
     
     data = domainmarks(res)

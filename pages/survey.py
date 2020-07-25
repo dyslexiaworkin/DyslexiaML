@@ -2,7 +2,7 @@ import streamlit as st
 from pages.fetch import*
 from pages.login import login_dict
 from pages.login import name_dict
-
+from model import prediction
 import MySQLdb
 
 
@@ -44,7 +44,7 @@ def main():
         pk = login_dict["key"]
         na = name_dict['name']
         st.write("primary key" ,pk)
-        st.write("nane " ,na)
+        st.write("Name " ,na)
     except:
         st.error(" Please Log in")
     
@@ -357,5 +357,17 @@ def main():
  #query = 'INSERT INTO quiz(pk,name,mone,mtwo,mthree,mfour,mfive,msix,mseven,meight,mnine,mten,meleven,mtwelve,mthirteen, mfourteen,mfifteen,msixteen, mseventeen, meighteen,mnineteen,mtwenty) VALUES ("%s", "%s","%s","%s","%s","%s","%s","%s","%s","%s","%s","%s","%s","%s","%s","%s","%s","%s","%s","%s");' % (pk,na,diss['marks1'],diss['marks2'],diss['marks3'],diss['marks4'],diss['marks5'],diss['marks6'],diss['marks7'],diss['marks8'],diss['marks9'],diss['marks10'],diss['marks11'],diss['marks12'],diss['marks13'],diss['marks14'],diss['marks15'],diss['marks16'],diss['marks17'],diss['marks18'],diss['marks19'],diss['marks20'])      
     
     if st.button("Check your result", key='result'):
-        #check for each question is answered
-        result()
+        
+        try:
+            with st.spinner(text ="DyslexiaML is Analyzing"):
+                pred = prediction(user_prime_key = pk)
+                if int(pred) == 3:
+                    st.balloons()
+                    st.success("Your Child Does Not Has Dyslexia!! ")
+                elif int(pred) == 2:
+                    st.success("Your Child Has Mild Dyslexia Symptoms. Consult Doctor ")
+                else:
+                    st.success("Your Child Has Dyslexia Symptoms. Consult Doctor ")
+        except UnboundLocalError:
+            st.warning("Please Login")    
+        
