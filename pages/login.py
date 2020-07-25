@@ -55,8 +55,8 @@ def view_all_users(c):
 
 
 
-login_dict={}
-
+login_dict = {}
+name_dict = {}
 def main():
     #global PRIMARY_KEY 
 	"""Simple Login App"""
@@ -87,6 +87,7 @@ def main():
 			if result:
 				#st.write(result[0][0])
 				PRIMARY_KEY = result[0][0]
+				name_dict.update({'name':result[0][1]})
 				login_dict.update({'key':PRIMARY_KEY})
 				#session_state.p = PRIMARY_KEY
 				st.success("Logged In as {}".format(username))

@@ -1,10 +1,17 @@
 import streamlit as st
 from pages.fetch import*
+from pages.login import login_dict
+from pages.login import name_dict
+
 
 def main():
     front_up()
     st.title("SURVEY")
-    
+    try:
+        st.write('User Logged in as',name_dict['name'])
+    except:
+        st.error(" Please Log in to use this feature")
+    #st.write(login_dict)
     if st.checkbox('Question I', key ='q1'):
         st.info(" Did your child struggle to learn to count?")
         

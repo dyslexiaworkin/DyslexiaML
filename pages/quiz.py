@@ -2,21 +2,7 @@ import streamlit as st
 from pages.fetch import*
 import SessionState
 from pages.login import login_dict
-
-#from pages.login import PRIMARY_KEY 
-
-
-class my_dictionary(dict): 
-  
-    # __init__ function 
-    def __init__(self): 
-        self = dict() 
-          
-    # Function to add key:value 
-    def add(self, key, value): 
-        self[key] = value 
-  
-# Main Function 
+from pages.login import name_dict
  
 
 
@@ -100,7 +86,12 @@ def main():
     
     front_up()
     st.title("QUIZ")
-    st.write(login_dict)
+    #st.write('User Logged in',name_dict.values())
+    try:
+        st.write('User Logged in as',name_dict['name'])
+    except:
+        st.error(" Please Log in")
+    
     if st.checkbox('Question I', key ='q1'):
         st.info("Check whether these two alphabets  are same or not?")
         st.image(image = 'https://github.com/dyslexiaworkin/artgallery/blob/master/O.png?raw=true',width=100)
