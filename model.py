@@ -5,6 +5,7 @@ from sklearn.svm import SVC
 from sklearn.preprocessing import StandardScaler
 from sklearn.pipeline import Pipeline
 from sklearn.externals import joblib
+from urllib.request import urlopen
 import MySQLdb
 
 
@@ -53,7 +54,7 @@ def model(user_prime_key=None):
     data = domainmarks(res)
      
     print("loading model")
-    pipeline = joblib.load('transform_predict.joblib') #url
+    pipeline = joblib.load(urlopen('https://github.com/dyslexiaworkin/DyslexiaML/blob/master/transform_predict.joblib?raw=true')) #url
     print('Done')
     
     predictions = pipeline.predict(data)
