@@ -119,8 +119,8 @@ def main():
         if st.button("SUBMIT", key='q2'):
             marks2 =submit(ans = ansq2, question ="2")
             dis.update({'marks2':marks2})
-            st.write(dis)
-            st.write(ansdic)
+            #st.write(dis)
+            #st.write(ansdic)
             
     if st.checkbox('Question III', key ='q3'):
         st.info("Check whether these two alphabets  are same or not?")
@@ -134,8 +134,8 @@ def main():
             st.write(ansq3)
             marks3=submit(ans = ansq3, question ="3")
             dis.update({'marks3':marks3})
-            st.write(ansq3)
-            st.write(dis)
+            #st.write(ansq3)
+            #st.write(dis)
             
     
     if st.checkbox('Question IV', key ='q4'):
@@ -150,8 +150,8 @@ def main():
             st.write(ansq4)
             marks4 = submit(ans = ansq4, question ="4")
             dis.update({'marks4':marks4})
-            st.write(dis)
-            st.write(dis)
+            #st.write(dis)
+            #st.write(dis)
             
     if st.checkbox('Question V', key ='q5'):
         st.info("Which letter CAT starts with?")
@@ -224,7 +224,7 @@ def main():
         st.info("What do you hear?")
         st.audio(data = 'https://github.com/dyslexiaworkin/artgallery/blob/master/cake.mpeg?raw=true')	
         
-        ansq10 = st.radio("Answer:", ['cake','lake','take','fuck'], key = 'q10')
+        ansq10 = st.radio("Answer:", ['cake','lake','take','fake'], key = 'q10')
         ansdic['ansq10'] =ansq10
         if st.button("SUBMIT", key='q10'):
             st.write(ansq10)
@@ -254,6 +254,6 @@ def main():
         except MySQLdb.IntegrityError:
              st.warning("Already Submitted")
         except:
-            st.warning("Please answer each all questions")
+            st.warning("Please answer all questions")
             
 # CREATE TABLE quiz (pk int PRIMARY KEY,name varchar(100),mone int,mtwo int,mthree int,mfour int,mfive int ,msix int,mseven int,meight int,mnine int,mten int);
