@@ -55,7 +55,7 @@ def submit(ans =None, question =None):
             marks=0
     
     elif question =="8":
-        if ans =="Dog":
+        if ans =="DOG":
             marks=4
         else:
             marks=0
@@ -200,7 +200,7 @@ def main():
         st.info("What do you see in the picture?")
         st.image(image = 'https://github.com/dyslexiaworkin/artgallery/blob/master/Dog.jpg?raw=true',width=100)
         
-        ansq8 = st.radio("Answer:", ['Cat','Dog'], key = 'q8')
+        ansq8 = st.radio("Answer:", ['GOD','DOG'], key = 'q8')
         ansdic['ansq8'] =ansq8
         if st.button("SUBMIT", key='q8'):
             st.write(ansq8)
