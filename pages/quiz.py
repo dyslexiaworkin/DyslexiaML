@@ -92,8 +92,8 @@ def main():
         st.write('User Logged in as',name_dict['name'])
         pk = login_dict["key"]
         na = name_dict['name']
-        st.write("primary key" ,pk)
-        st.write("nane " ,na)
+        #st.write("primary key" ,pk)
+        st.write("name " ,na)
     except:
         st.error(" Please Log in")
     
@@ -181,7 +181,7 @@ def main():
             marks6 = submit(ans = ansq6, question ="6")
             dis.update({'marks6':marks6})
             
-            st.write(dis)
+            #st.write(dis)
             
     
     if st.checkbox('Question VII', key ='q7'):
@@ -237,11 +237,11 @@ def main():
     if st.button("Submit the quiz", key='submit'):
         #st.write("hello")
         try:
-            st.write(bool(ansdic['ansq1']))
-            st.write(dis['marks1'])
-            st.write(dis.keys())
-            st.write(ansdic.keys())
-            st.write("hello3")
+            #st.write(bool(ansdic['ansq1']))
+            #st.write(dis['marks1'])
+            #st.write(dis.keys())
+            #st.write(ansdic.keys())
+            #st.write("hello3")
             if bool(ansdic['ansq1']) and bool(ansdic['ansq2']) and bool(ansdic['ansq3']) and bool(ansdic['ansq4']) and bool(ansdic['ansq5']) and bool(ansdic['ansq6']) and bool(ansdic['ansq7']) and bool(ansdic['ansq8']) and bool(ansdic['ansq9']) and bool(ansdic['ansq10']) :
                 #st.write("hello4")
                 conn = MySQLdb.connect("localhost","ryan","mark50","dyslexia" )

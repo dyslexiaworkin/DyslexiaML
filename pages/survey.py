@@ -43,7 +43,7 @@ def main():
         st.write('User Logged in as',name_dict['name'])
         pk = login_dict["key"]
         na = name_dict['name']
-        st.write("primary key" ,pk)
+        #st.write("primary key" ,pk)
         st.write("Name " ,na)
     except:
         st.error(" Please Log in")
@@ -61,8 +61,8 @@ def main():
             marks1 = submit(ans = ansq1, question ="1")
             st.write(marks1)
             diss.update({'marks1':marks1})
-            st.write(anssdic)
-            st.write(diss)
+            #st.write(anssdic)
+            #st.write(diss)
             
             
     
@@ -75,8 +75,8 @@ def main():
             st.write(ansq2)
             marks2 = submit(ans = ansq2, question ="2")
             diss.update({'marks2':marks2})
-            st.write(anssdic)
-            st.write(diss)
+            #st.write(anssdic)
+            #st.write(diss)
             
             
             
@@ -90,8 +90,8 @@ def main():
             st.write(ansq3)
             marks3 = submit(ans = ansq3, question ="3")
             diss.update({'marks3':marks3})
-            st.write(anssdic)
-            st.write(diss)
+            #st.write(anssdic)
+            #st.write(diss)
             
             
     
@@ -106,8 +106,8 @@ def main():
             marks4 = submit(ans = ansq4, question ="4")
             
             diss.update({'marks4':marks4})
-            st.write(anssdic)
-            st.write(diss)
+            #st.write(anssdic)
+            #st.write(diss)
             
     
     if st.checkbox('Question V', key ='q5'):
@@ -119,8 +119,8 @@ def main():
             st.write(ansq5)
             marks5 = submit(ans = ansq5, question ="5")
             diss.update({'marks5':marks5})
-            st.write(anssdic)
-            st.write(diss)
+            #st.write(anssdic)
+            #st.write(diss)
             
     
     if st.checkbox('Question VI', key ='q6'):
@@ -132,8 +132,8 @@ def main():
             st.write(ansq6)
             marks6 = submit(ans = ansq6, question ="6")
             diss.update({'marks6':marks6})
-            st.write(anssdic)
-            st.write(diss)
+            #st.write(anssdic)
+            #st.write(diss)
     
     
     if st.checkbox('Question VII', key ='q7'):
@@ -145,8 +145,8 @@ def main():
             st.write(ansq7)
             marks7 = submit(ans = ansq7, question ="7")
             diss.update({'marks7':marks7})
-            st.write(anssdic)
-            st.write(diss)
+            #st.write(anssdic)
+            #st.write(diss)
     
     if st.checkbox('Question VIII', key ='q8'):
         st.info("Confused by letters, numbers, words, sequences, or verbal explanations.")
@@ -157,8 +157,8 @@ def main():
             st.write(ansq8)
             marks8 = submit(ans = ansq8, question ="8")
             diss.update({'marks8':marks8})
-            st.write(anssdic)
-            st.write(diss)
+            #st.write(anssdic)
+            #st.write(diss)
     
     if st.checkbox('Question IX', key ='q9'):
         st.info(" Reads and rereads with little comprehension")
@@ -169,8 +169,8 @@ def main():
             st.write(ansq9)
             marks9 = submit(ans = ansq9, question ="9")
             diss.update({'marks9':marks9})
-            st.write(anssdic)
-            st.write(diss)
+            #st.write(anssdic)
+            #st.write(diss)
     
     if st.checkbox('Question X', key ='q10'):
         st.info("Difficulty putting thoughts into words; speaks in halting phrases; leaves sentences incomplete.")
@@ -182,8 +182,8 @@ def main():
             st.write(ansq10)
             marks10 = submit(ans = ansq10, question ="10")
             diss.update({'marks10':marks10})
-            st.write(anssdic)
-            st.write(diss)
+            #st.write(anssdic)
+            #st.write(diss)
     
     
     
@@ -198,8 +198,8 @@ def main():
             st.write(ansq11)
             marks11 = submit(ans = ansq11, question ="11")
             diss.update({'marks11':marks11})
-            st.write(anssdic)
-            st.write(diss)
+            #st.write(anssdic)
+            #st.write(diss)
     
     
     
@@ -213,8 +213,8 @@ def main():
             st.write(ansq12)
             marks12 = submit(ans = ansq12, question ="12")
             diss.update({'marks12':marks12})
-            st.write(anssdic)
-            st.write(diss)
+            #st.write(anssdic)
+            #st.write(diss)
     
     
     if st.checkbox('Question XIV', key ='q13'):
@@ -227,8 +227,8 @@ def main():
             st.write(ansq13)
             marks13 = submit(ans = ansq13, question ="13")
             diss.update({'marks13':marks13})
-            st.write(anssdic)
-            st.write(diss)
+            #st.write(anssdic)
+            #st.write(diss)
     
     
     if st.checkbox('Question XIV', key ='q14'):
@@ -241,8 +241,8 @@ def main():
             st.write(ansq14)
             marks14 = submit(ans = ansq14, question ="14")
             diss.update({'marks14':marks14})
-            st.write(anssdic)
-            st.write(diss)
+            #st.write(anssdic)
+            #st.write(diss)
     
     
     
@@ -259,8 +259,8 @@ def main():
             st.write(ansq15)
             marks15 = submit(ans = ansq15, question ="15")
             diss.update({'marks15':marks15})
-            st.write(anssdic)
-            st.write(diss)
+            #st.write(anssdic)
+            #st.write(diss)
 
 
     
@@ -274,8 +274,8 @@ def main():
             st.write(ansq16)
             marks16 = submit(ans = ansq16, question ="16")
             diss.update({'marks16':marks16})
-            st.write(anssdic)
-            st.write(diss)
+            #st.write(anssdic)
+            #st.write(diss)
 
     
     
@@ -289,8 +289,8 @@ def main():
             st.write(ansq17)
             marks17 = submit(ans = ansq17, question ="17")
             diss.update({'marks17':marks17})
-            st.write(anssdic)
-            st.write(diss)
+            #st.write(anssdic)
+            #st.write(diss)
 
  
  
@@ -304,8 +304,8 @@ def main():
             st.write(ansq18)
             marks18 = submit(ans = ansq18, question ="18")
             diss.update({'marks18':marks18})
-            st.write(anssdic)
-            st.write(diss)
+            #st.write(anssdic)
+            #st.write(diss)
 
 
     if st.checkbox('Question XIX', key ='q19'):
@@ -318,8 +318,8 @@ def main():
             st.write(ansq19)
             marks19 = submit(ans = ansq19, question ="19")
             diss.update({'marks19':marks19})
-            st.write(anssdic)
-            st.write(diss)
+            #st.write(anssdic)
+            #st.write(diss)
 
 
     if st.checkbox('Question XX', key ='q20'):
@@ -332,8 +332,8 @@ def main():
             st.write(ansq20)
             marks20 = submit(ans = ansq20, question ="20")
             diss.update({'marks20':marks20})
-            st.write(anssdic)
-            st.write(diss)
+            #st.write(anssdic)
+            #st.write(diss)
      
     if st.button("Submit the quiz", key='submit'):
         try:
