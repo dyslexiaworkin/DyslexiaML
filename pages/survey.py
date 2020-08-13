@@ -332,7 +332,7 @@ def main():
             st.write(ansq20)
             marks20 = submit(ans = ansq20, question ="20")
             diss.update({'marks20':marks20})
-            #st.write(anssdic)
+            st.write("Your answers",anssdic)
             #st.write(diss)
      
     if st.button("Submit the quiz", key='submit'):

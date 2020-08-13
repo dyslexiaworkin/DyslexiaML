@@ -1,0 +1,141 @@
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://172.31.17.241:8501
+  External URL: http://3.129.148.71:8501
+
+  Stopping...
+/home/ubuntu/.local/lib/python3.6/site-packages/sklearn/externals/joblib/__init__.py:15: FutureWarning: sklearn.externals.joblib is deprecated in 0.21 and will be removed in 0.23. Please import this functionality directly from joblib, which can be installed with: pip install joblib. If this warning is raised when loading pickled models, you may need to re-serialize those models with scikit-learn 0.21+.
+  warnings.warn(msg, category=FutureWarning)
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://172.31.17.241:8501
+  External URL: http://3.129.148.71:8501
+
+  Stopping...
+/home/ubuntu/.local/lib/python3.6/site-packages/sklearn/externals/joblib/__init__.py:15: FutureWarning: sklearn.externals.joblib is deprecated in 0.21 and will be removed in 0.23. Please import this functionality directly from joblib, which can be installed with: pip install joblib. If this warning is raised when loading pickled models, you may need to re-serialize those models with scikit-learn 0.21+.
+  warnings.warn(msg, category=FutureWarning)
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://172.31.17.241:8501
+  External URL: http://18.191.43.117:8501
+
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://172.31.17.241:8502
+  External URL: http://18.191.43.117:8502
+
+  Stopping...
+  Stopping...
+/home/ubuntu/.local/lib/python3.6/site-packages/sklearn/externals/joblib/__init__.py:15: FutureWarning: sklearn.externals.joblib is deprecated in 0.21 and will be removed in 0.23. Please import this functionality directly from joblib, which can be installed with: pip install joblib. If this warning is raised when loading pickled models, you may need to re-serialize those models with scikit-learn 0.21+.
+  warnings.warn(msg, category=FutureWarning)
+/home/ubuntu/.local/lib/python3.6/site-packages/sklearn/externals/joblib/__init__.py:15: FutureWarning: sklearn.externals.joblib is deprecated in 0.21 and will be removed in 0.23. Please import this functionality directly from joblib, which can be installed with: pip install joblib. If this warning is raised when loading pickled models, you may need to re-serialize those models with scikit-learn 0.21+.
+  warnings.warn(msg, category=FutureWarning)
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://172.31.17.241:8501
+  External URL: http://3.15.158.146:8501
+
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://172.31.17.241:8503
+  External URL: http://3.15.158.146:8503
+
+  Stopping...
+  Stopping...
+/home/ubuntu/.local/lib/python3.6/site-packages/sklearn/externals/joblib/__init__.py:15: FutureWarning: sklearn.externals.joblib is deprecated in 0.21 and will be removed in 0.23. Please import this functionality directly from joblib, which can be installed with: pip install joblib. If this warning is raised when loading pickled models, you may need to re-serialize those models with scikit-learn 0.21+.
+  warnings.warn(msg, category=FutureWarning)
+/home/ubuntu/.local/lib/python3.6/site-packages/sklearn/externals/joblib/__init__.py:15: FutureWarning: sklearn.externals.joblib is deprecated in 0.21 and will be removed in 0.23. Please import this functionality directly from joblib, which can be installed with: pip install joblib. If this warning is raised when loading pickled models, you may need to re-serialize those models with scikit-learn 0.21+.
+  warnings.warn(msg, category=FutureWarning)
+Exception in thread Thread-6:
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/watchdog/observers/inotify_buffer.py", line 88, in run
+    inotify_events = self._inotify.read_events()
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/watchdog/observers/inotify_c.py", line 322, in read_events
+    for wd, mask, cookie, name in Inotify._parse_event_buffer(event_buffer):
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/watchdog/observers/inotify_c.py", line 453, in _parse_event_buffer
+    while i + 16 <= len(event_buffer):
+TypeError: object of type 'NoneType' has no len()
+
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://172.31.17.241:8502
+  External URL: http://3.15.158.146:8502
+
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://172.31.17.241:8504
+  External URL: http://3.15.158.146:8504
+
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://172.31.17.241:8506
+  External URL: http://3.15.158.146:8506
+
+  Stopping...
+  Stopping...
+  Stopping...
+/home/ubuntu/.local/lib/python3.6/site-packages/sklearn/externals/joblib/__init__.py:15: FutureWarning: sklearn.externals.joblib is deprecated in 0.21 and will be removed in 0.23. Please import this functionality directly from joblib, which can be installed with: pip install joblib. If this warning is raised when loading pickled models, you may need to re-serialize those models with scikit-learn 0.21+.
+  warnings.warn(msg, category=FutureWarning)
+/home/ubuntu/.local/lib/python3.6/site-packages/sklearn/externals/joblib/__init__.py:15: FutureWarning: sklearn.externals.joblib is deprecated in 0.21 and will be removed in 0.23. Please import this functionality directly from joblib, which can be installed with: pip install joblib. If this warning is raised when loading pickled models, you may need to re-serialize those models with scikit-learn 0.21+.
+  warnings.warn(msg, category=FutureWarning)
+/home/ubuntu/.local/lib/python3.6/site-packages/sklearn/externals/joblib/__init__.py:15: FutureWarning: sklearn.externals.joblib is deprecated in 0.21 and will be removed in 0.23. Please import this functionality directly from joblib, which can be installed with: pip install joblib. If this warning is raised when loading pickled models, you may need to re-serialize those models with scikit-learn 0.21+.
+  warnings.warn(msg, category=FutureWarning)
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://172.31.17.241:8502
+  External URL: http://3.15.158.146:8502
+
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://172.31.17.241:8501
+  External URL: http://3.15.158.146:8501
+
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://172.31.17.241:8503
+  External URL: http://3.15.158.146:8503
+
+  Stopping...
+/home/ubuntu/.local/lib/python3.6/site-packages/sklearn/externals/joblib/__init__.py:15: FutureWarning: sklearn.externals.joblib is deprecated in 0.21 and will be removed in 0.23. Please import this functionality directly from joblib, which can be installed with: pip install joblib. If this warning is raised when loading pickled models, you may need to re-serialize those models with scikit-learn 0.21+.
+  warnings.warn(msg, category=FutureWarning)
+  Stopping...
+/home/ubuntu/.local/lib/python3.6/site-packages/sklearn/externals/joblib/__init__.py:15: FutureWarning: sklearn.externals.joblib is deprecated in 0.21 and will be removed in 0.23. Please import this functionality directly from joblib, which can be installed with: pip install joblib. If this warning is raised when loading pickled models, you may need to re-serialize those models with scikit-learn 0.21+.
+  warnings.warn(msg, category=FutureWarning)
+loading model
+Done
+loading model
+Done
+  Stopping...
+/home/ubuntu/.local/lib/python3.6/site-packages/sklearn/externals/joblib/__init__.py:15: FutureWarning: sklearn.externals.joblib is deprecated in 0.21 and will be removed in 0.23. Please import this functionality directly from joblib, which can be installed with: pip install joblib. If this warning is raised when loading pickled models, you may need to re-serialize those models with scikit-learn 0.21+.
+  warnings.warn(msg, category=FutureWarning)
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://172.31.17.241:8501
+  External URL: http://18.222.126.53:8501
+
+loading model
+Done
+loading model
+Done
+loading model
+Done
+loading model
+Done
+  Stopping...
+/home/ubuntu/.local/lib/python3.6/site-packages/sklearn/externals/joblib/__init__.py:15: FutureWarning: sklearn.externals.joblib is deprecated in 0.21 and will be removed in 0.23. Please import this functionality directly from joblib, which can be installed with: pip install joblib. If this warning is raised when loading pickled models, you may need to re-serialize those models with scikit-learn 0.21+.
+  warnings.warn(msg, category=FutureWarning)

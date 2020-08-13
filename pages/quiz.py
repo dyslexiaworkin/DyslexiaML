@@ -230,7 +230,7 @@ def main():
             st.write(ansq10)
             marks10 = submit(ans = ansq10, question ="10")
             dis.update({'marks10':marks10})
-            st.write("Your Answers",dis)
+            st.write("Your Answers",ansdic)
             
     
     
