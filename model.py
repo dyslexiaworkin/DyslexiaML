@@ -30,6 +30,7 @@ def result(user_prime_key=None):
 
 def domainmarks(dataframe=None):
     temp1 = dataframe.drop(['name','pk'],axis=1)
+    temp10 = dataframe.drop(['name','pk'],axis=1)
     marksdf = pd.DataFrame(columns=(['Language_vocab', 'Memory', 'Speed','Visual_discrimination','Audio_Discrimination', 'Survey_Score']) )
     marksdf.Language_vocab = (temp1.mone_quiz+temp1.mtwo_quiz+temp1.mthree_quiz+temp1.mfour_quiz+temp1.mfive_quiz+temp1.msix_quiz+temp1.meight_quiz)/24
     marksdf.Visual_discrimination = (temp1.mone_quiz+temp1.mthree_quiz+temp1.mfour_quiz+temp1.msix_quiz)/16
@@ -46,6 +47,7 @@ def domainmarks(dataframe=None):
     marksdf.Survey_Score = temp1[surevy_col].sum(axis=1)/80
     data = marksdf.copy()
     del temp1
+    del temp10
     del marksdf
     return data
  
